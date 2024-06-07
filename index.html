@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.hunchads.com/dpa -->
+<html lang="en" class="w-mod-js w-mod-ix">
+  <head>
+    <style>
+      .before-after {
+        background-color: #101110;
+        height: 350px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+      }
+
+      .before-after .team-slider {
+        background-color: transparent;
+        display: flex;
+      }
+
+      .before-after .team-wrapper {
+        flex: none;
+        display: flex;
+      }
+
+      .before-after .team-members-inner-wrap {
+        color: #fff;
+        flex: none;
+        display: flex;
+      }
+
+      .before-after .team-members-inner-wrap {
+        color: #fff;
+        flex: none;
+        display: flex;
+      }
+
+      .before-after .team-member-item.bordered-item {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        min-width: 0;
+        max-width: 268px;
+        max-height: 268px;
+        padding: 4px;
+        position: relative;
+      }
+
+      .before-after .team-member-image {
+        border-radius: 8px;
+        width: 100%;
+        max-width: 336px;
+        height: 336px;
+        max-height: 100%;
+      }
+
+      .before-after .team-member-item {
+        filter: grayscale();
+        flex: none;
+        width: 100%;
+        max-width: 186px;
+        margin-right: 24px;
+        transition: transform 0.3s, filter 0.3s;
+      }
+
+      .cell-phone-wrapper {
+        top: 0;
+        left: 49.5%;
+        position: absolute;
+        height: 600px;
+        z-index: 10000;
+      }
+
+      .before-after .clip-left,
+      .before-after .clip-right {
+        position: absolute;
+        width: 100%;
+      }
+      .before-after .clip-left {
+        clip-path: inset(0 50% 0 0);
+      }
+      .before-after .clip-right {
+        clip-path: inset(0 0 0 50%);
+      }
+      .before-after
+        .team-slider.clip-left
+        .team-wrapper:hover
+        > .team-members-inner-wrap,
+      .before-after
+        .team-slider.clip-right
+        .team-wrapper:hover
+        > .team-members-inner-wrap {
+        animation-play-state: running;
+      }
+      .before-after .team-slider.clip-left .team-member-item,
+      .before-after .team-slider.clip-right .team-member-item {
+        filter: grayscale(0);
+      }
+      .before-after .team-slider.clip-left .team-member-item:hover,
+      .before-after .team-slider.clip-right .team-member-item:hover {
+        filter: grayscale(0);
+        transform: scale(1);
+      }
+
+      @keyframes teamLoop {
+        from {
+          transform: translate(0%, 0);
+        }
+        to {
+          transform: translate(-100%, 0);
+        }
+      }
+
+      .before-after .team-members-inner-wrap {
+        animation: teamLoop 25s infinite;
+        animation-timing-function: linear;
+        animation-play-state: running;
+        animation-direction: reverse;
+      }
+
+      @media only screen and (min-width: 991px) {
+        .before-after .team-wrapper:hover > .team-members-inner-wrap {
+          animation-play-state: paused;
+        }
+
+        .before-after .team-member-item:hover {
+          filter: grayscale(0);
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body class="body white-bg">
+    <img
+      src="./assets/iPhone15Pro.png"
+      alt="cellphone wrapper"
+      class="cell-phone-wrapper"
+    />
+    <div class="before-after">
+      <div class="team-slider clip-left">
+        <div class="team-wrapper">
+          <div class="team-members-inner-wrap">
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/1-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/2-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/3-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/4-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/5-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/6-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+          </div>
+          <div class="team-members-inner-wrap">
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/1-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/2-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/3-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/4-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/5-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/6-2.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-slider clip-right">
+        <div class="team-wrapper">
+          <div class="team-members-inner-wrap">
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/1-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/2-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/3-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/4-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/5-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/6-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+          </div>
+          <div class="team-members-inner-wrap">
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/1-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/2-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/3-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/4-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/5-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+            <div class="team-member-item bordered-item">
+              <img
+                src="./assets/6-1.webp"
+                loading="eager"
+                alt=""
+                class="team-member-image full-width-mogile-image"
+                data-xblocker="passed"
+                style="visibility: visible"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
